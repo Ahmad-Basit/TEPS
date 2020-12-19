@@ -34,7 +34,7 @@ jobs:
         run: npm install --global surge
 #Deploye App to surge
       - name: Deploye project to surge
-        run: surge ./ teps.surge.sh --token ${{ AHMAD.surge_TOKEN  }}
+        run: surge ./ teps.surge.sh --token ${{ secrets.SURGE_TOKEN  }}
                 
 
       
